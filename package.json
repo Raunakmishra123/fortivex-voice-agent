@@ -1,0 +1,29 @@
+{
+  "name": "fortivex-voice-agent",
+  "version": "1.0.0",
+  "description": "Fortivex AI — Autonomous AI Sales Voice Agent MVP",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "server": "node server/agentApiServer.js",
+    "start": "concurrently \"npm run server\" \"npm run dev\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^4.5.2",
+    "express": "^4.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "tailwindcss": "^3.4.4",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "vite": "^5.3.1"
+  }
+}

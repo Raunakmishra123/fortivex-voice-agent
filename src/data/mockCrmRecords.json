@@ -1,0 +1,131 @@
+{
+  "metadata": {
+    "description": "Mock CRM lead records and calendar availability for Fortivex AI demo",
+    "last_updated": "2026-11-25"
+  },
+  "leads": [
+    {
+      "id": "lead-001",
+      "name": "Priya Sharma",
+      "email": "priya.sharma@techstartup.in",
+      "phone": "+91-98765-43210",
+      "company": "TechStartup India Pvt. Ltd.",
+      "title": "VP of Sales",
+      "industry": "SaaS",
+      "region": "India",
+      "language": "Hindi",
+      "status": "new",
+      "bant_score": 0,
+      "sentiment_score": 0,
+      "notes": "",
+      "calls": []
+    },
+    {
+      "id": "lead-002",
+      "name": "Carlos Rivera",
+      "email": "carlos.rivera@latamgrowth.com",
+      "phone": "+52-55-1234-5678",
+      "company": "LatAm Growth Solutions",
+      "title": "Chief Revenue Officer",
+      "industry": "E-commerce",
+      "region": "Mexico",
+      "language": "Spanish",
+      "status": "warm",
+      "bant_score": 62,
+      "sentiment_score": 0.6,
+      "notes": "Interested in Professional plan. Has budget approved for Q1.",
+      "calls": ["call-prev-001"]
+    },
+    {
+      "id": "lead-003",
+      "name": "Sarah Mitchell",
+      "email": "sarah.mitchell@enterprise-corp.com",
+      "phone": "+1-415-555-0199",
+      "company": "Enterprise Corp USA",
+      "title": "Head of Sales Operations",
+      "industry": "Financial Services",
+      "region": "USA",
+      "language": "English",
+      "status": "hot",
+      "bant_score": 85,
+      "sentiment_score": 0.8,
+      "notes": "Very interested in Enterprise plan. Decision maker with $500k annual budget. Needs compliance docs.",
+      "calls": ["call-prev-002", "call-prev-003"]
+    }
+  ],
+  "calendar_slots": {
+    "timezone": "UTC",
+    "available_slots": [
+      {
+        "id": "slot-001",
+        "date": "2026-11-26",
+        "time": "09:00",
+        "duration_minutes": 30,
+        "label": "Tomorrow 9:00 AM",
+        "available": true
+      },
+      {
+        "id": "slot-002",
+        "date": "2026-11-26",
+        "time": "14:00",
+        "duration_minutes": 30,
+        "label": "Tomorrow 2:00 PM",
+        "available": true
+      },
+      {
+        "id": "slot-003",
+        "date": "2026-11-27",
+        "time": "10:00",
+        "duration_minutes": 45,
+        "label": "Thursday 10:00 AM",
+        "available": true
+      },
+      {
+        "id": "slot-004",
+        "date": "2026-11-27",
+        "time": "15:30",
+        "duration_minutes": 30,
+        "label": "Thursday 3:30 PM",
+        "available": true
+      },
+      {
+        "id": "slot-005",
+        "date": "2026-11-28",
+        "time": "11:00",
+        "duration_minutes": 60,
+        "label": "Friday 11:00 AM",
+        "available": true
+      }
+    ]
+  },
+  "appointments": [],
+  "call_history": [
+    {
+      "id": "call-prev-001",
+      "lead_id": "lead-002",
+      "date": "2026-11-20",
+      "duration_seconds": 420,
+      "outcome": "interested",
+      "summary": "Carlos showed interest in Professional plan. Asked about multilingual support and CRM integration.",
+      "bant_at_end": { "budget": 70, "authority": 90, "need": 80, "timeline": 50 }
+    },
+    {
+      "id": "call-prev-002",
+      "lead_id": "lead-003",
+      "date": "2026-11-15",
+      "duration_seconds": 1200,
+      "outcome": "demo_scheduled",
+      "summary": "Sarah is a decision maker. Budget of $500K available for sales tech. Wants SOC2 compliance documentation.",
+      "bant_at_end": { "budget": 95, "authority": 100, "need": 90, "timeline": 70 }
+    },
+    {
+      "id": "call-prev-003",
+      "lead_id": "lead-003",
+      "date": "2026-11-22",
+      "duration_seconds": 900,
+      "outcome": "proposal_sent",
+      "summary": "Sent Enterprise proposal. Sarah reviewing with legal team. Follow-up next week.",
+      "bant_at_end": { "budget": 95, "authority": 100, "need": 95, "timeline": 85 }
+    }
+  ]
+}
